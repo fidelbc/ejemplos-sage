@@ -1,0 +1,17 @@
+#+title: 
+#+date: 2014-08-31
+
+Esta es la página de inicio de los ejemplos de [[http://sagemath.org/][Sage]].
+
+#+BEGIN_MARKDOWN
+<div class="sage">
+  <script type="text/x-sage">1+2</script>
+</div>
+#+END_MARKDOWN
+
+* COMMENT Local Variables
+
+# Local Variables:
+# org-octopress-is-post: nil
+# org-hide-emphasis-markers: nil
+# End:

@@ -1,0 +1,4 @@
+source/org/auto/*
+*.tex
+*.el
+*.tikz

@@ -11,4 +11,12 @@ source/_stash
 source/stylesheets/screen.css
 vendor
 node_modules
-Gemfile.lock
+source/org/auto/*
+source/org/*.pdf
+source/org/*.tex
+source/org/*.html
+/source/index/index.md
+/source/index.md
+source/_posts/
+*.png
+*.tikz

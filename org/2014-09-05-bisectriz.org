@@ -1,0 +1,20 @@
+#+title: Teorema de la bisectriz
+#+date: 2014-09-05 12:48
+#+keywords: [geometría, graficación]
+
+#+begin_markdown
+<div class="sage">
+  <script type="text/x-sage">
+a=10
+b=3
+c=4
+
+raiz = sqrt(c^2+b^2)
+x1 = a*(raiz+b)/(raiz+a)
+y1 = c*a/(raiz+a)
+P=plot((c/b)*x,0,b)+plot((c/(b-a))*(x-a),b,a)+plot((c/(raiz+b))*x,0,x1,color='red')+point([(x1,y1)],size=50)
+P.set_aspect_ratio(1)
+P.plot()
+  </script>
+</div>
+#+end_markdown

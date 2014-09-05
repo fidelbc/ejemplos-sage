@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: relaciones de recurrencia - Ejemplos de Sage</title>
+  <title>Teorema de la bisectriz - Ejemplos de Sage</title>
   <meta name="author" content="Rafael Villarroel">
 
   
-  <meta name="description" content="Category: relaciones de recurrencia">
+  <meta name="description" content=" ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rvf0068.github.io/ejemplos-sage/blog/categories/relaciones-de-recurrencia/">
+  <link rel="canonical" href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/bisectriz/">
   <link href="/ejemplos-sage/favicon.png" rel="icon">
   <link href="/ejemplos-sage/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/ejemplos-sage/javascripts/modernizr-2.0.js"></script>
@@ -72,36 +72,108 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Relaciones De Recurrencia</h1>
+    
+      <h1 class="entry-title">Teorema De La Bisectriz</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-05T12:48:00-05:00" pubdate data-updated="true"></time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><div class="sage">
+  <script type="text/x-sage">
+a=10
+b=3
+c=4
 
-  
-  <h2>2014</h2>
-
-<article>
-  
-<h1><a href="/ejemplos-sage/blog/2014/09/02/relaciones-de-recurrencia/">Relaciones de recurrencia</a></h1>
-<time datetime="2014-09-02T18:22:00-05:00" pubdate><span class='month'>Sep</span> <span class='day'>02</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/ejemplos-sage/blog/categories/relaciones-de-recurrencia/'>relaciones de recurrencia</a>, <a class='category' href='/ejemplos-sage/blog/categories/sistemas-dinamicos/'>sistemas dinámicos</a></span>
-</footer>
-
-
-</article>
-
+raiz = sqrt(c^2+b^2)
+x1 = a*(raiz+b)/(raiz+a)
+y1 = c*a/(raiz+a)
+P=plot((c/b)*x,0,b)+plot((c/(b-a))*(x-a),b,a)+plot((c/(raiz+b))*x,0,x1,color='red')+point([(x1,y1)],size=50)
+P.set_aspect_ratio(1)
+P.plot()
+  </script>
+</div>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Rafael Villarroel</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-05T12:48:00-05:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/ejemplos-sage/blog/categories/geometria/'>geometría</a>, <a class='category' href='/ejemplos-sage/blog/categories/graficacion/'>graficación</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/bisectriz/" data-via="" data-counturl="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/bisectriz/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/ejemplos-sage/blog/2014/09/05/mapeo-logistico/" title="Previous Post: Diagrama de telaraña">&laquo; Diagrama de telaraña</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comentarios</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -154,7 +226,10 @@
       var disqus_shortname = 'mateclases';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/bisectriz/';
+        var disqus_url = 'http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/bisectriz/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

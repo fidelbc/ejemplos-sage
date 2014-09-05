@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ejemplos de Sage</title>
+  <title>Teorema de la función implícita - Ejemplos de Sage</title>
   <meta name="author" content="Rafael Villarroel">
 
   
-  <meta name="description" content="Esta es la página de inicio de los ejemplos de Sage. Tweet Comentarios Please enable JavaScript to view the comments powered by Disqus. Entradas &hellip;">
+  <meta name="description" content="Definimos en Sage la función de dos variables Tenemos que la derivada parcial lo cual quiere decir, por el teorema de la función implícita, que &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rvf0068.github.io/ejemplos-sage/">
+  <link rel="canonical" href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/teorema-funcion-implicita/">
   <link href="/ejemplos-sage/favicon.png" rel="icon">
   <link href="/ejemplos-sage/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/ejemplos-sage/javascripts/modernizr-2.0.js"></script>
@@ -72,19 +72,15 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
-  <p>Esta es la página de inicio de los ejemplos de <a href="http://sagemath.org/">Sage</a>.</p>
-
-<div class="sage">
-  <script type="text/x-sage">1+2</script>
-</div>
-
-  
-    <footer>
+  <header>
+    
+      <h1 class="entry-title">Teorema De La Función Implícita</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
@@ -96,13 +92,84 @@
   
 
 
-<time datetime="2014-08-31T00:00:00-05:00" pubdate data-updated="true"></time>
+<time datetime="2014-09-05T12:30:00-05:00" pubdate data-updated="true"></time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Definimos en Sage la función de dos variables</p>
+
+<script type="math/tex; mode=display">
+G(x,y)=x^{5}y^{4}=xy^{5}-x^{2}y+1
+</script>
+
+<div class="sage">
+  <script type="text/x-sage">
+y=var('y')
+G(x,y)=x^5*y^4-x*y^5-x^2*y+1
+  </script>
+</div>
+
+<p>Tenemos que la derivada parcial <script type="math/tex">\frac{\partial G}{\partial
+y}(1,1)\ne 0</script></p>
+
+<div class="sage">
+  <script type="text/x-sage">
+diff(G,y)(1,1)
+  </script>
+</div>
+
+<p>lo cual quiere decir, por el teorema de la función implícita, que
+existe una función <script type="math/tex">y=f(x)</script> definida en una vecindad del <script type="math/tex">1</script>, tal
+que <script type="math/tex">G(x,f(x))=0</script>.</p>
+
+<div class="sage">
+  <script type="text/x-sage">
+I=implicit_plot(G,(x,-1.5,1.5),(y,-1.5,1.5))
+P=point([(1,1)],color='red',size=50)
+T=text("(1,1)",(1.15,1),color='brown')
+I+P+T
+  </script>
+</div>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rvf0068.github.io/ejemplos-sage/index.html" data-via="" data-counturl="http://rvf0068.github.io/ejemplos-sage/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">Rafael Villarroel</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-05T12:30:00-05:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/ejemplos-sage/blog/categories/graficacion/'>graficación</a>, <a class='category' href='/ejemplos-sage/blog/categories/sistemas-dinamicos/'>sistemas dinámicos</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/teorema-funcion-implicita/" data-via="" data-counturl="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/teorema-funcion-implicita/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -112,9 +179,14 @@
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/ejemplos-sage/blog/2014/09/02/relaciones-de-recurrencia/" title="Previous Post: Relaciones de recurrencia">&laquo; Relaciones de recurrencia</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
   <section>
@@ -167,8 +239,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://rvf0068.github.io/ejemplos-sage/index.html';
-        var disqus_url = 'http://rvf0068.github.io/ejemplos-sage/index.html';
+        var disqus_identifier = 'http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/teorema-funcion-implicita/';
+        var disqus_url = 'http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/teorema-funcion-implicita/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ejemplos de Sage</title>
+  <title>Relaciones de recurrencia - Ejemplos de Sage</title>
   <meta name="author" content="Rafael Villarroel">
 
   
-  <meta name="description" content="Esta es la página de inicio de los ejemplos de Sage. Tweet Comentarios Please enable JavaScript to view the comments powered by Disqus. Entradas &hellip;">
+  <meta name="description" content="Definimos en Sage la relación de recurrencia: con condiciones iniciales Calculemos: ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rvf0068.github.io/ejemplos-sage/">
+  <link rel="canonical" href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/02/relaciones-de-recurrencia/">
   <link href="/ejemplos-sage/favicon.png" rel="icon">
   <link href="/ejemplos-sage/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/ejemplos-sage/javascripts/modernizr-2.0.js"></script>
@@ -72,19 +72,15 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
-  <p>Esta es la página de inicio de los ejemplos de <a href="http://sagemath.org/">Sage</a>.</p>
-
-<div class="sage">
-  <script type="text/x-sage">1+2</script>
-</div>
-
-  
-    <footer>
+  <header>
+    
+      <h1 class="entry-title">Relaciones De Recurrencia</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
@@ -96,13 +92,81 @@
   
 
 
-<time datetime="2014-08-31T00:00:00-05:00" pubdate data-updated="true"></time>
+<time datetime="2014-09-02T18:22:00-05:00" pubdate data-updated="true"></time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Definimos en Sage la relación de recurrencia:</p>
+
+<script type="math/tex; mode=display">
+a_{n}=2(a_{n-1}-a_{n-2}), n\geq2.
+</script>
+
+<p>con condiciones iniciales</p>
+
+<script type="math/tex; mode=display">
+a_{0}=1,\qquad a_{1}=2.
+</script>
+
+<div class="sage">
+  <script type="text/x-sage">
+def a(n):
+    if n==0:
+        return 1
+    elif n==1:
+        return 2
+    else:
+        return 2*(a(n-1)-a(n-2))
+  </script>
+</div>
+
+<p>Calculemos:</p>
+
+<div class="sage">
+  <script type="text/x-sage">
+a(4)
+  </script>
+</div>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rvf0068.github.io/ejemplos-sage/index.html" data-via="" data-counturl="http://rvf0068.github.io/ejemplos-sage/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">Rafael Villarroel</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-02T18:22:00-05:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/ejemplos-sage/blog/categories/relaciones-de-recurrencia/'>relaciones de recurrencia</a>, <a class='category' href='/ejemplos-sage/blog/categories/sistemas-dinamicos/'>sistemas dinámicos</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/02/relaciones-de-recurrencia/" data-via="" data-counturl="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/02/relaciones-de-recurrencia/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -112,9 +176,12 @@
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+      
+    </p>
+  </footer>
 </article>
 
   <section>
@@ -163,8 +230,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://rvf0068.github.io/ejemplos-sage/index.html';
-        var disqus_url = 'http://rvf0068.github.io/ejemplos-sage/index.html';
+        var disqus_identifier = 'http://rvf0068.github.io/ejemplos-sage/blog/2014/09/02/relaciones-de-recurrencia/';
+        var disqus_url = 'http://rvf0068.github.io/ejemplos-sage/blog/2014/09/02/relaciones-de-recurrencia/';
         var disqus_script = 'embed.js';
       
     (function () {

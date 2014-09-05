@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ejemplos de Sage]]></title>
-  <link href="http://rvf0068.github.io/ejemplos-sage/atom.xml" rel="self"/>
+  <title><![CDATA[Category: sistemas dinámicos | Ejemplos de Sage]]></title>
+  <link href="http://rvf0068.github.io/ejemplos-sage/blog/categories/sistemas-dinamicos/atom.xml" rel="self"/>
   <link href="http://rvf0068.github.io/ejemplos-sage/"/>
   <updated>2014-09-02T18:45:49-05:00</updated>
   <id>http://rvf0068.github.io/ejemplos-sage/</id>

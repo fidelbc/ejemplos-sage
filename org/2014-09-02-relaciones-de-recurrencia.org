@@ -1,0 +1,36 @@
+#+title: Relaciones de recurrencia
+#+date: 2014-09-02 18:22
+#+keywords: [sistemas dinámicos, relaciones de recurrencia]
+
+Definimos en Sage la relación de recurrencia:
+\begin{displaymath}
+a_{n}=2(a_{n-1}-a_{n-2}), n\geq2.
+\end{displaymath}
+con condiciones iniciales
+\begin{displaymath}
+a_{0}=1,\qquad a_{1}=2.
+\end{displaymath}
+
+#+begin_markdown
+<div class="sage">
+  <script type="text/x-sage">
+def a(n):
+    if n==0:
+        return 1
+    elif n==1:
+        return 2
+    else:
+        return 2*(a(n-1)-a(n-2))
+  </script>
+</div>
+#+end_markdown
+
+Calculemos:
+
+#+begin_markdown
+<div class="sage">
+  <script type="text/x-sage">
+a(4)
+  </script>
+</div>
+#+end_markdown

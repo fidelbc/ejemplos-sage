@@ -34,3 +34,13 @@ a(4)
   </script>
 </div>
 #+end_markdown
+
+Muchos valores:
+
+#+begin_markdown
+<div class="sage">
+  <script type="text/x-sage">
+for i in range(30): print a(i)
+  </script>
+</div>
+#+end_markdown

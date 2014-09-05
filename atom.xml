@@ -4,7 +4,7 @@
   <title><![CDATA[Ejemplos de Sage]]></title>
   <link href="http://rvf0068.github.io/ejemplos-sage/atom.xml" rel="self"/>
   <link href="http://rvf0068.github.io/ejemplos-sage/"/>
-  <updated>2014-09-05T12:36:18-05:00</updated>
+  <updated>2014-09-05T12:42:58-05:00</updated>
   <id>http://rvf0068.github.io/ejemplos-sage/</id>
   <author>
     <name><![CDATA[Rafael Villarroel]]></name>
@@ -28,6 +28,7 @@ G(x,y)=x^{5}y^{4}=xy^{5}-x^{2}y+1
   <script type="text/x-sage">
 y=var('y')
 G(x,y)=x^5*y^4-x*y^5-x^2*y+1
+G
   </script>
 </div>
 
@@ -89,6 +90,14 @@ def a(n):
 <div class="sage">
   <script type="text/x-sage">
 a(4)
+  </script>
+</div>
+
+<p>Muchos valores:</p>
+
+<div class="sage">
+  <script type="text/x-sage">
+for i in range(30): print a(i)
   </script>
 </div>
 ]]></content>

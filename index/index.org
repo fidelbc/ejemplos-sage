@@ -9,6 +9,17 @@ Esta es la página de inicio de los ejemplos de [[http://sagemath.org/][Sage]].
 </div>
 #+END_MARKDOWN
 
+#+begin_markdown 
+<script>
+var idcomments_acct = '3708e78a292df4852d166bc37f52c9ca';
+var idcomments_post_id;
+var idcomments_post_url;
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>  
+#+end_markdown
+
+
 * COMMENT Local Variables
 
 # Local Variables:

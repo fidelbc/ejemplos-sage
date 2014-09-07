@@ -3,11 +3,9 @@
 
 Esta es la página de inicio de los ejemplos de [[http://sagemath.org/][Sage]].
 
-#+BEGIN_MARKDOWN
-<div class="sage">
-  <script type="text/x-sage">1+2</script>
-</div>
-#+END_MARKDOWN
+#+BEGIN_SRC sage
+  1+2
+#+END_SRC
 
 * COMMENT Local Variables
 

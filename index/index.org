@@ -3,22 +3,9 @@
 
 Esta es la página de inicio de los ejemplos de [[http://sagemath.org/][Sage]].
 
-#+BEGIN_MARKDOWN
-<div class="sage">
-  <script type="text/x-sage">1+2</script>
-</div>
-#+END_MARKDOWN
-
-#+begin_markdown 
-<script>
-var idcomments_acct = '3708e78a292df4852d166bc37f52c9ca';
-var idcomments_post_id;
-var idcomments_post_url;
-</script>
-<span id="IDCommentsPostTitle" style="display:none"></span>
-<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>  
-#+end_markdown
-
+#+BEGIN_SRC sage
+  1+2
+#+END_SRC
 
 * COMMENT Local Variables
 

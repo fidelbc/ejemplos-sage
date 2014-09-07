@@ -11,9 +11,7 @@ con condiciones iniciales
 a_{0}=1,\qquad a_{1}=2.
 \end{displaymath}
 
-#+begin_markdown
-<div class="sage">
-  <script type="text/x-sage">
+#+BEGIN_SRC sage
 def a(n):
     if n==0:
         return 1
@@ -21,26 +19,16 @@ def a(n):
         return 2
     else:
         return 2*(a(n-1)-a(n-2))
-  </script>
-</div>
-#+end_markdown
+#+END_SRC
 
 Calculemos:
 
-#+begin_markdown
-<div class="sage">
-  <script type="text/x-sage">
+#+BEGIN_SRC sage
 a(4)
-  </script>
-</div>
-#+end_markdown
+#+END_SRC
 
-Muchos valores:
-
-#+begin_markdown
-<div class="sage">
-  <script type="text/x-sage">
+#+BEGIN_SRC sage
 for i in range(30): print a(i)
-  </script>
-</div>
-#+end_markdown
+#+END_SRC
+
+

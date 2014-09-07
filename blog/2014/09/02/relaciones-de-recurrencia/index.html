@@ -9,7 +9,7 @@
   <meta name="author" content="Rafael Villarroel">
 
   
-  <meta name="description" content="Definimos en Sage la relación de recurrencia: con condiciones iniciales Calculemos: Muchos valores: ">
+  <meta name="description" content="Definimos en Sage la relación de recurrencia: con condiciones iniciales Calculemos: ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -111,33 +111,25 @@ a_{n}=2(a_{n-1}-a_{n-2}), n\geq2.
 a_{0}=1,\qquad a_{1}=2.
 </script>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 def a(n):
     if n==0:
-        return 1
+	return 1
     elif n==1:
-        return 2
+	return 2
     else:
-        return 2*(a(n-1)-a(n-2))
-  </script>
-</div>
+	return 2*(a(n-1)-a(n-2))
+</script></div>
 
 <p>Calculemos:</p>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 a(4)
-  </script>
-</div>
+</script></div>
 
-<p>Muchos valores:</p>
-
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 for i in range(30): print a(i)
-  </script>
-</div>
+</script></div>
 </div>
 
 

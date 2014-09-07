@@ -4,7 +4,7 @@
   <title><![CDATA[Category: relaciones de recurrencia | Ejemplos de Sage]]></title>
   <link href="http://rvf0068.github.io/ejemplos-sage/blog/categories/relaciones-de-recurrencia/atom.xml" rel="self"/>
   <link href="http://rvf0068.github.io/ejemplos-sage/"/>
-  <updated>2014-09-06T12:54:57-05:00</updated>
+  <updated>2014-09-07T12:48:25-05:00</updated>
   <id>http://rvf0068.github.io/ejemplos-sage/</id>
   <author>
     <name><![CDATA[Rafael Villarroel]]></name>
@@ -30,33 +30,25 @@ a_{n}=2(a_{n-1}-a_{n-2}), n\geq2.
 a_{0}=1,\qquad a_{1}=2.
 </script>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 def a(n):
     if n==0:
-        return 1
+	return 1
     elif n==1:
-        return 2
+	return 2
     else:
-        return 2*(a(n-1)-a(n-2))
-  </script>
-</div>
+	return 2*(a(n-1)-a(n-2))
+</script></div>
 
 <p>Calculemos:</p>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 a(4)
-  </script>
-</div>
+</script></div>
 
-<p>Muchos valores:</p>
-
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 for i in range(30): print a(i)
-  </script>
-</div>
+</script></div>
 ]]></content>
   </entry>
   

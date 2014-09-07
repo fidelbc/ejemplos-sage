@@ -4,7 +4,7 @@
   <title><![CDATA[Ejemplos de Sage]]></title>
   <link href="http://rvf0068.github.io/ejemplos-sage/atom.xml" rel="self"/>
   <link href="http://rvf0068.github.io/ejemplos-sage/"/>
-  <updated>2014-09-06T12:54:57-05:00</updated>
+  <updated>2014-09-07T12:48:25-05:00</updated>
   <id>http://rvf0068.github.io/ejemplos-sage/</id>
   <author>
     <name><![CDATA[Rafael Villarroel]]></name>
@@ -18,8 +18,7 @@
     <link href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/bisectriz/"/>
     <updated>2014-09-05T12:48:00-05:00</updated>
     <id>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/bisectriz</id>
-    <content type="html"><![CDATA[<div class="sage">
-  <script type="text/x-sage">
+    <content type="html"><![CDATA[<div class="sage"><script type="text/x-sage">
 a=10
 b=3
 c=4
@@ -30,8 +29,7 @@ y1 = c*a/(raiz+a)
 P=plot((c/b)*x,0,b)+plot((c/(b-a))*(x-a),b,a)+plot((c/(raiz+b))*x,0,x1,color='red')+point([(x1,y1)],size=50)
 P.set_aspect_ratio(1)
 P.plot()
-  </script>
-</div>
+</script></div>
 ]]></content>
   </entry>
   
@@ -40,45 +38,43 @@ P.plot()
     <link href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/mapeo-logistico/"/>
     <updated>2014-09-05T12:45:00-05:00</updated>
     <id>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/mapeo-logistico</id>
-    <content type="html"><![CDATA[<div class="sage">
-  <script type="text/x-sage">
+    <content type="html"><![CDATA[<div class="sage"><script type="text/x-sage">
 def cobweb(a_function, start, mask = 0, iterations = 20, xmin = 0, xmax = 1):
     '''
     Returns a graphics object of a plot of the function and a cobweb trajectory starting from the value start.
 
     INPUT:
-        a_function: a function of one variable
-        start: the starting value of the iteration
-        mask: (optional) the number of initial iterates to ignore
-        iterations: (optional) the number of iterations to draw, following the masked iterations
-        xmin: (optional) the lower end of the plotted interval
-        xmax: (optional) the upper end of the plotted interval
-    
+	a_function: a function of one variable
+	start: the starting value of the iteration
+	mask: (optional) the number of initial iterates to ignore
+	iterations: (optional) the number of iterations to draw, following the masked iterations
+	xmin: (optional) the lower end of the plotted interval
+	xmax: (optional) the upper end of the plotted interval
+
     EXAMPLES:
-        sage: f = lambda x: 3.9*x*(1-x)
-        sage: show(cobweb(f,.01,iterations=200), xmin = 0, xmax = 1, ymin=0)
-    
+	sage: f = lambda x: 3.9*x*(1-x)
+	sage: show(cobweb(f,.01,iterations=200), xmin = 0, xmax = 1, ymin=0)
+
     '''
     basic_plot = plot(a_function, xmin = xmin, xmax = xmax)
     id_plot = plot(lambda x: x, xmin = xmin, xmax = xmax)
     iter_list = []
     current = start
     for i in range(mask):
-        current = a_function(current)
+	current = a_function(current)
     for i in range(iterations):
-        iter_list.append([current,a_function(current)])
-        current = a_function(current)
-        iter_list.append([current,current])
+	iter_list.append([current,a_function(current)])
+	current = a_function(current)
+	iter_list.append([current,current])
     cobweb = line(iter_list, rgbcolor = (1,0,0))
     return basic_plot + id_plot + cobweb
 var('x')
 @interact
 def cobwebber(f_text = input_box(default = "3.8*x*(1-x)",label = "function", type=str), start_val = slider(0,1,.01,.5,label = 'start value'), its = slider([2^i for i in range(0,12)],default = 16, label="iterations")):
     def f(x):
-        return eval(f_text)
+	return eval(f_text)
     show(cobweb(f, start_val, iterations = its))
-  </script>
-</div>
+</script></div>
 ]]></content>
   </entry>
   
@@ -93,35 +89,29 @@ def cobwebber(f_text = input_box(default = "3.8*x*(1-x)",label = "function", typ
 G(x,y)=x^{5}y^{4}=xy^{5}-x^{2}y+1
 </script>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 y=var('y')
 G(x,y)=x^5*y^4-x*y^5-x^2*y+1
 G
-  </script>
-</div>
+</script></div>
 
 <p>Tenemos que la derivada parcial <script type="math/tex">\frac{\partial G}{\partial
 y}(1,1)\ne 0</script></p>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 diff(G,y)(1,1)
-  </script>
-</div>
+</script></div>
 
 <p>lo cual quiere decir, por el teorema de la función implícita, que
 existe una función <script type="math/tex">y=f(x)</script> definida en una vecindad del <script type="math/tex">1</script>, tal
 que <script type="math/tex">G(x,f(x))=0</script>.</p>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 I=implicit_plot(G,(x,-1.5,1.5),(y,-1.5,1.5))
 P=point([(1,1)],color='red',size=50)
 T=text("(1,1)",(1.15,1),color='brown')
 I+P+T
-  </script>
-</div>
+</script></div>
 ]]></content>
   </entry>
   
@@ -142,33 +132,25 @@ a_{n}=2(a_{n-1}-a_{n-2}), n\geq2.
 a_{0}=1,\qquad a_{1}=2.
 </script>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 def a(n):
     if n==0:
-        return 1
+	return 1
     elif n==1:
-        return 2
+	return 2
     else:
-        return 2*(a(n-1)-a(n-2))
-  </script>
-</div>
+	return 2*(a(n-1)-a(n-2))
+</script></div>
 
 <p>Calculemos:</p>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 a(4)
-  </script>
-</div>
+</script></div>
 
-<p>Muchos valores:</p>
-
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 for i in range(30): print a(i)
-  </script>
-</div>
+</script></div>
 ]]></content>
   </entry>
   

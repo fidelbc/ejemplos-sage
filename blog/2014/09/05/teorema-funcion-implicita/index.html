@@ -105,35 +105,29 @@
 G(x,y)=x^{5}y^{4}=xy^{5}-x^{2}y+1
 </script>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 y=var('y')
 G(x,y)=x^5*y^4-x*y^5-x^2*y+1
 G
-  </script>
-</div>
+</script></div>
 
 <p>Tenemos que la derivada parcial <script type="math/tex">\frac{\partial G}{\partial
 y}(1,1)\ne 0</script></p>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 diff(G,y)(1,1)
-  </script>
-</div>
+</script></div>
 
 <p>lo cual quiere decir, por el teorema de la función implícita, que
 existe una función <script type="math/tex">y=f(x)</script> definida en una vecindad del <script type="math/tex">1</script>, tal
 que <script type="math/tex">G(x,f(x))=0</script>.</p>
 
-<div class="sage">
-  <script type="text/x-sage">
+<div class="sage"><script type="text/x-sage">
 I=implicit_plot(G,(x,-1.5,1.5),(y,-1.5,1.5))
 P=point([(1,1)],color='red',size=50)
 T=text("(1,1)",(1.15,1),color='brown')
 I+P+T
-  </script>
-</div>
+</script></div>
 </div>
 
 

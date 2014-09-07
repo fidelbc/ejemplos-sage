@@ -2,9 +2,7 @@
 #+date: 2014-09-05 12:45
 #+keywords: [sistemas dinámicos, graficación, interact]
 
-#+begin_markdown
-<div class="sage">
-  <script type="text/x-sage">
+#+BEGIN_SRC sage
 def cobweb(a_function, start, mask = 0, iterations = 20, xmin = 0, xmax = 1):
     '''
     Returns a graphics object of a plot of the function and a cobweb trajectory starting from the value start.
@@ -40,6 +38,5 @@ def cobwebber(f_text = input_box(default = "3.8*x*(1-x)",label = "function", typ
     def f(x):
         return eval(f_text)
     show(cobweb(f, start_val, iterations = its))
-  </script>
-</div>
-#+end_markdown
+#+END_SRC
+

@@ -7,39 +7,29 @@ Definimos en Sage la función de dos variables
 G(x,y)=x^{5}y^{4}=xy^{5}-x^{2}y+1
 \end{displaymath}
 
-#+begin_markdown
-<div class="sage">
-  <script type="text/x-sage">
+#+BEGIN_SRC sage
 y=var('y')
 G(x,y)=x^5*y^4-x*y^5-x^2*y+1
 G
-  </script>
-</div>
-#+end_markdown
+#+END_SRC
 
 Tenemos que la derivada parcial \(\frac{\partial G}{\partial
 y}(1,1)\ne 0\)
 
-#+begin_markdown
-<div class="sage">
-  <script type="text/x-sage">
+#+BEGIN_SRC sage
 diff(G,y)(1,1)
-  </script>
-</div>
-#+end_markdown
+#+END_SRC
 
 lo cual quiere decir, por el teorema de la función implícita, que
 existe una función \(y=f(x)\) definida en una vecindad del \(1\), tal
 que \(G(x,f(x))=0\).
 
-#+begin_markdown
-<div class="sage">
-  <script type="text/x-sage">
+#+BEGIN_SRC sage
 I=implicit_plot(G,(x,-1.5,1.5),(y,-1.5,1.5))
 P=point([(1,1)],color='red',size=50)
 T=text("(1,1)",(1.15,1),color='brown')
 I+P+T
-  </script>
-</div>
-#+end_markdown
+#+END_SRC
+
+
 

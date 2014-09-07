@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ejemplos de Sage</title>
+  <title>Forma punto pendiente de la recta - Ejemplos de Sage</title>
   <meta name="author" content="Rafael Villarroel">
 
   
-  <meta name="description" content="Esta es la página de inicio de los ejemplos de Sage. Tweet Comentarios Please enable JavaScript to view the comments powered by Disqus. Entradas &hellip;">
+  <meta name="description" content="Se dibuja la recta que tiene pendiente y ordenada al origen
+, es decir, la recta . ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rvf0068.github.io/ejemplos-sage/">
+  <link rel="canonical" href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/recta-cartesiana/">
   <link href="/ejemplos-sage/favicon.png" rel="icon">
   <link href="/ejemplos-sage/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/ejemplos-sage/javascripts/modernizr-2.0.js"></script>
@@ -72,19 +73,15 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
-  <p>Esta es la página de inicio de los ejemplos de <a href="http://sagemath.org/">Sage</a>.</p>
-
-<div class="sage"><script type="text/x-sage">
-1+2
-</script></div>
-
-  
-    <footer>
+  <header>
+    
+      <h1 class="entry-title">Forma Punto Pendiente De La Recta</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
@@ -96,13 +93,60 @@
   
 
 
-<time datetime="2014-08-31T00:00:00-05:00" pubdate data-updated="true"></time>
+<time datetime="2014-09-07T18:18:00-05:00" pubdate data-updated="true"></time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Se dibuja la recta que tiene pendiente <script type="math/tex">m</script> y ordenada al origen
+<script type="math/tex">b</script>, es decir, la recta <script type="math/tex">y=mx+b</script>.</p>
+
+<div class="sage"><script type="text/x-sage">
+@interact
+def _(m= slider(-5,5,1,2,label = 'm'),b=slider(-5,5,1,0,label = 'b')):
+    P=plot(m*x+b,-3,3)
+    P.set_aspect_ratio(1)
+    show(P)
+</script></div>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rvf0068.github.io/ejemplos-sage/index.html" data-via="" data-counturl="http://rvf0068.github.io/ejemplos-sage/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">Rafael Villarroel</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-07T18:18:00-05:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/ejemplos-sage/blog/categories/geometria/'>geometría</a>, <a class='category' href='/ejemplos-sage/blog/categories/graficacion/'>graficación</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/recta-cartesiana/" data-via="" data-counturl="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/recta-cartesiana/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -112,9 +156,14 @@
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/ejemplos-sage/blog/2014/09/05/bisectriz/" title="Previous Post: Teorema de la bisectriz">&laquo; Teorema de la bisectriz</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
   <section>
@@ -179,8 +228,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://rvf0068.github.io/ejemplos-sage/index.html';
-        var disqus_url = 'http://rvf0068.github.io/ejemplos-sage/index.html';
+        var disqus_identifier = 'http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/recta-cartesiana/';
+        var disqus_url = 'http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/recta-cartesiana/';
         var disqus_script = 'embed.js';
       
     (function () {

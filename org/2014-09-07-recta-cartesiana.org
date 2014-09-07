@@ -1,0 +1,16 @@
+#+title: Forma punto pendiente de la recta
+#+date: 2014-09-07 18:18
+#+keywords: [geometría, graficación]
+
+Se dibuja la recta que tiene pendiente \(m\) y ordenada al origen
+\(b\), es decir, la recta \(y=mx+b\).
+
+#+BEGIN_SRC sage
+@interact
+def _(m= slider(-5,5,1,2,label = 'm'),b=slider(-5,5,1,0,label = 'b')):
+    P=plot(m*x+b,-3,3)
+    P.set_aspect_ratio(1)
+    show(P)
+#+END_SRC
+
+

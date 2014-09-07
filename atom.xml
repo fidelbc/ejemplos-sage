@@ -4,7 +4,7 @@
   <title><![CDATA[Ejemplos de Sage]]></title>
   <link href="http://rvf0068.github.io/ejemplos-sage/atom.xml" rel="self"/>
   <link href="http://rvf0068.github.io/ejemplos-sage/"/>
-  <updated>2014-09-07T12:48:25-05:00</updated>
+  <updated>2014-09-07T17:12:28-05:00</updated>
   <id>http://rvf0068.github.io/ejemplos-sage/</id>
   <author>
     <name><![CDATA[Rafael Villarroel]]></name>
@@ -38,7 +38,9 @@ P.plot()
     <link href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/mapeo-logistico/"/>
     <updated>2014-09-05T12:45:00-05:00</updated>
     <id>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/mapeo-logistico</id>
-    <content type="html"><![CDATA[<div class="sage"><script type="text/x-sage">
+    <content type="html"><![CDATA[<p>Código tomado de <a href="http://wiki.sagemath.org/interact/dynsys#Cobweb_diagrams_on_.5B0.2C1.5D">Sage Wiki</a>.</p>
+
+<div class="sage"><script type="text/x-sage">
 def cobweb(a_function, start, mask = 0, iterations = 20, xmin = 0, xmax = 1):
     '''
     Returns a graphics object of a plot of the function and a cobweb trajectory starting from the value start.

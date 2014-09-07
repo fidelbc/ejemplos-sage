@@ -2,6 +2,8 @@
 #+date: 2014-09-05 12:45
 #+keywords: [sistemas dinámicos, graficación, interact]
 
+Código tomado de [[http://wiki.sagemath.org/interact/dynsys#Cobweb_diagrams_on_.5B0.2C1.5D][Sage Wiki]].
+
 #+BEGIN_SRC sage
 def cobweb(a_function, start, mask = 0, iterations = 20, xmin = 0, xmax = 1):
     '''

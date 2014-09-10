@@ -1,5 +1,5 @@
 #+title: Iteradas del mapeo logístico
-#+date: 2014-09-07 18:18
+#+date: 2014-09-10 16:35
 #+keywords: [sistemas-dinámicos, graficación]
 
 Dibujamos varias iteradas del mapeo logístico. Primero estimamos el

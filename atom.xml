@@ -4,7 +4,7 @@
   <title><![CDATA[Ejemplos de Sage]]></title>
   <link href="http://rvf0068.github.io/ejemplos-sage/atom.xml" rel="self"/>
   <link href="http://rvf0068.github.io/ejemplos-sage/"/>
-  <updated>2014-09-10T16:33:27-05:00</updated>
+  <updated>2014-09-10T16:35:46-05:00</updated>
   <id>http://rvf0068.github.io/ejemplos-sage/</id>
   <author>
     <name><![CDATA[Rafael Villarroel]]></name>
@@ -14,28 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Forma punto pendiente de la recta]]></title>
-    <link href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/recta-cartesiana/"/>
-    <updated>2014-09-07T18:18:00-05:00</updated>
-    <id>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/recta-cartesiana</id>
-    <content type="html"><![CDATA[<p>Se dibuja la recta que tiene pendiente <script type="math/tex">m</script> y ordenada al origen
-<script type="math/tex">b</script>, es decir, la recta <script type="math/tex">y=mx+b</script>.</p>
-
-<div class="sage"><script type="text/x-sage">
-@interact
-def _(m= slider(-5,5,1,2,label = 'm'),b=slider(-5,5,1,0,label = 'b')):
-    P=plot(m*x+b,-3,3)
-    P.set_aspect_ratio(1)
-    show(P)
-</script></div>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Iteradas del mapeo logístico]]></title>
-    <link href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico/"/>
-    <updated>2014-09-07T18:18:00-05:00</updated>
-    <id>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico</id>
+    <link href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/10/iteradas-del-mapeo-logistico/"/>
+    <updated>2014-09-10T16:35:00-05:00</updated>
+    <id>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/10/iteradas-del-mapeo-logistico</id>
     <content type="html"><![CDATA[<p>Dibujamos varias iteradas del mapeo logístico. Primero estimamos el
 valor del parámetro que garantiza el conjunto de Cantor de puntos cuya
 órbita está contenida en <script type="math/tex">I=[0,1]</script>.</p>
@@ -76,6 +58,24 @@ plot(f(f(f(x))),0,1)+plot(x,0,1,color='red')
 
 <div class="sage"><script type="text/x-sage">
 plot(f(f(f(f(x)))),0,1)+plot(x,0,1,color='red')
+</script></div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Forma punto pendiente de la recta]]></title>
+    <link href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/recta-cartesiana/"/>
+    <updated>2014-09-07T18:18:00-05:00</updated>
+    <id>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/recta-cartesiana</id>
+    <content type="html"><![CDATA[<p>Se dibuja la recta que tiene pendiente <script type="math/tex">m</script> y ordenada al origen
+<script type="math/tex">b</script>, es decir, la recta <script type="math/tex">y=mx+b</script>.</p>
+
+<div class="sage"><script type="text/x-sage">
+@interact
+def _(m= slider(-5,5,1,2,label = 'm'),b=slider(-5,5,1,0,label = 'b')):
+    P=plot(m*x+b,-3,3)
+    P.set_aspect_ratio(1)
+    show(P)
 </script></div>
 ]]></content>
   </entry>

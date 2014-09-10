@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sistemas-dinámicos | Ejemplos de Sage]]></title>
   <link href="http://rvf0068.github.io/ejemplos-sage/blog/categories/sistemas-dinamicos/atom.xml" rel="self"/>
   <link href="http://rvf0068.github.io/ejemplos-sage/"/>
-  <updated>2014-09-10T16:33:27-05:00</updated>
+  <updated>2014-09-10T16:35:46-05:00</updated>
   <id>http://rvf0068.github.io/ejemplos-sage/</id>
   <author>
     <name><![CDATA[Rafael Villarroel]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Iteradas del mapeo logístico]]></title>
-    <link href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico/"/>
-    <updated>2014-09-07T18:18:00-05:00</updated>
-    <id>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico</id>
+    <link href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/10/iteradas-del-mapeo-logistico/"/>
+    <updated>2014-09-10T16:35:00-05:00</updated>
+    <id>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/10/iteradas-del-mapeo-logistico</id>
     <content type="html"><![CDATA[<p>Dibujamos varias iteradas del mapeo logístico. Primero estimamos el
 valor del parámetro que garantiza el conjunto de Cantor de puntos cuya
 órbita está contenida en <script type="math/tex">I=[0,1]</script>.</p>

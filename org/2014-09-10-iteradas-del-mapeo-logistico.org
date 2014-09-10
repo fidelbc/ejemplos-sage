@@ -1,0 +1,46 @@
+#+title: Iteradas del mapeo logístico
+#+date: 2014-09-07 18:18
+#+keywords: [sistemas-dinámicos, graficación]
+
+Dibujamos varias iteradas del mapeo logístico. Primero estimamos el
+valor del parámetro que garantiza el conjunto de Cantor de puntos cuya
+órbita está contenida en \(I=[0,1]\).
+
+
+#+BEGIN_SRC sage
+n(2+sqrt(5))
+#+END_SRC
+
+Definimos el mapeo logístico:
+
+#+BEGIN_SRC sage
+f(x)=4.5*x*(1-x)
+#+END_SRC
+
+y graficamos sus iteradas:
+
+#+BEGIN_SRC sage
+P=plot(f(x),0,1)+plot(x,0,1,color='red')
+P.set_aspect_ratio(1)
+P.show()
+#+END_SRC
+
+#+BEGIN_SRC sage
+P=plot(f(f(x)),0,1)+plot(x,0,1,color='red')
+P.set_aspect_ratio(1)
+P.show()
+#+END_SRC
+
+#+BEGIN_SRC sage
+P=plot(f(f(f(x))),0,1)+plot(x,0,1,color='red')
+P.set_aspect_ratio(1)
+P.show()
+#+END_SRC
+
+#+BEGIN_SRC sage
+plot(f(f(f(x))),0,1)+plot(x,0,1,color='red')
+#+END_SRC
+
+#+BEGIN_SRC sage
+plot(f(f(f(f(x)))),0,1)+plot(x,0,1,color='red')
+#+END_SRC

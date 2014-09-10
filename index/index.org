@@ -1,5 +1,6 @@
 #+title: 
 #+date: 2014-08-31
+#+layout: page
 
 Esta es la página de inicio de los ejemplos de [[http://sagemath.org/][Sage]].
 
@@ -10,6 +11,5 @@ Esta es la página de inicio de los ejemplos de [[http://sagemath.org/][Sage]].
 * COMMENT Local Variables
 
 # Local Variables:
-# org-octopress-is-post: nil
 # org-hide-emphasis-markers: nil
 # End:

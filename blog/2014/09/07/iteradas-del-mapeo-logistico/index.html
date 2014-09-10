@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ejemplos de Sage</title>
+  <title>Iteradas del mapeo logístico - Ejemplos de Sage</title>
   <meta name="author" content="Rafael Villarroel">
 
   
-  <meta name="description" content="Blog Archives Entradas recientes Forma punto pendiente de la recta Iteradas del mapeo logístico Teorema de la bisectriz Diagrama de telaraña Teorema &hellip;">
+  <meta name="description" content="Dibujamos varias iteradas del mapeo logístico. Primero estimamos el
+valor del parámetro que garantiza el conjunto de Cantor de puntos cuya
+órbita &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rvf0068.github.io/ejemplos-sage/blog/">
+  <link rel="canonical" href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico/">
   <link href="/ejemplos-sage/favicon.png" rel="icon">
   <link href="/ejemplos-sage/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/ejemplos-sage/javascripts/modernizr-2.0.js"></script>
@@ -71,15 +73,141 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
+  <header>
+    
+      <h1 class="entry-title">Iteradas Del Mapeo Logístico</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
   
-  <div class="pagination">
+
+
+<time datetime="2014-09-07T18:18:00-05:00" pubdate data-updated="true"></time>
+        
+      </p>
     
-    <a href="/ejemplos-sage/blog/archives">Blog Archives</a>
-    
-  </div>
+  </header>
+
+
+<div class="entry-content"><p>Dibujamos varias iteradas del mapeo logístico. Primero estimamos el
+valor del parámetro que garantiza el conjunto de Cantor de puntos cuya
+órbita está contenida en <script type="math/tex">I=[0,1]</script>.</p>
+
+<div class="sage"><script type="text/x-sage">
+n(2+sqrt(5))
+</script></div>
+
+<p>Definimos el mapeo logístico:</p>
+
+<div class="sage"><script type="text/x-sage">
+f(x)=4.5*x*(1-x)
+</script></div>
+
+<p>y graficamos sus iteradas:</p>
+
+<div class="sage"><script type="text/x-sage">
+P=plot(f(x),0,1)+plot(x,0,1,color='red')
+P.set_aspect_ratio(1)
+P.show()
+</script></div>
+
+<div class="sage"><script type="text/x-sage">
+P=plot(f(f(x)),0,1)+plot(x,0,1,color='red')
+P.set_aspect_ratio(1)
+P.show()
+</script></div>
+
+<div class="sage"><script type="text/x-sage">
+P=plot(f(f(f(x))),0,1)+plot(x,0,1,color='red')
+P.set_aspect_ratio(1)
+P.show()
+</script></div>
+
+<div class="sage"><script type="text/x-sage">
+plot(f(f(f(x))),0,1)+plot(x,0,1,color='red')
+</script></div>
+
+<div class="sage"><script type="text/x-sage">
+plot(f(f(f(f(x)))),0,1)+plot(x,0,1,color='red')
+</script></div>
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Rafael Villarroel</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-07T18:18:00-05:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/ejemplos-sage/blog/categories/graficacion/'>graficación</a>, <a class='category' href='/ejemplos-sage/blog/categories/sistemas-dinamicos/'>sistemas-dinámicos</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico/" data-via="" data-counturl="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/ejemplos-sage/blog/2014/09/05/bisectriz/" title="Previous Post: Teorema de la bisectriz">&laquo; Teorema de la bisectriz</a>
+      
+      
+        <a class="basic-alignment right" href="/ejemplos-sage/blog/2014/09/07/recta-cartesiana/" title="Next Post: Forma punto pendiente de la recta">Forma punto pendiente de la recta &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comentarios</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -116,6 +244,7 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -132,7 +261,10 @@
       var disqus_shortname = 'mateclases';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico/';
+        var disqus_url = 'http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

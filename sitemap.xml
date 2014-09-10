@@ -9,6 +9,12 @@
   </url>
   
   <url>
+    <loc>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico/</loc>
+    <lastmod>2014-09-07T18:18:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/05/bisectriz/</loc>
     <lastmod>2014-09-05T12:48:00-05:00</lastmod>
     <priority>0.8</priority>
@@ -35,28 +41,28 @@
   
   <url>
     <loc>http://rvf0068.github.io/ejemplos-sage/blog/archives/</loc>
-    <lastmod>2014-09-10T16:30:38-05:00</lastmod>
+    <lastmod>2014-09-10T16:33:27-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://rvf0068.github.io/ejemplos-sage/</loc>
-    <lastmod>2014-09-10T16:30:38-05:00</lastmod>
+    <lastmod>2014-09-10T16:33:27-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://rvf0068.github.io/ejemplos-sage/blog/</loc>
-    <lastmod>2014-09-10T16:30:38-05:00</lastmod>
+    <lastmod>2014-09-10T16:33:27-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://rvf0068.github.io/ejemplos-sage/</loc>
-    <lastmod>2014-09-10T16:30:38-05:00</lastmod>
+    <lastmod>2014-09-10T16:33:27-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

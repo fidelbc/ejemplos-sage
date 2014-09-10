@@ -4,7 +4,7 @@
   <title><![CDATA[Ejemplos de Sage]]></title>
   <link href="http://rvf0068.github.io/ejemplos-sage/atom.xml" rel="self"/>
   <link href="http://rvf0068.github.io/ejemplos-sage/"/>
-  <updated>2014-09-10T16:30:38-05:00</updated>
+  <updated>2014-09-10T16:33:27-05:00</updated>
   <id>http://rvf0068.github.io/ejemplos-sage/</id>
   <author>
     <name><![CDATA[Rafael Villarroel]]></name>
@@ -27,6 +27,55 @@ def _(m= slider(-5,5,1,2,label = 'm'),b=slider(-5,5,1,0,label = 'b')):
     P=plot(m*x+b,-3,3)
     P.set_aspect_ratio(1)
     show(P)
+</script></div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Iteradas del mapeo logístico]]></title>
+    <link href="http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico/"/>
+    <updated>2014-09-07T18:18:00-05:00</updated>
+    <id>http://rvf0068.github.io/ejemplos-sage/blog/2014/09/07/iteradas-del-mapeo-logistico</id>
+    <content type="html"><![CDATA[<p>Dibujamos varias iteradas del mapeo logístico. Primero estimamos el
+valor del parámetro que garantiza el conjunto de Cantor de puntos cuya
+órbita está contenida en <script type="math/tex">I=[0,1]</script>.</p>
+
+<div class="sage"><script type="text/x-sage">
+n(2+sqrt(5))
+</script></div>
+
+<p>Definimos el mapeo logístico:</p>
+
+<div class="sage"><script type="text/x-sage">
+f(x)=4.5*x*(1-x)
+</script></div>
+
+<p>y graficamos sus iteradas:</p>
+
+<div class="sage"><script type="text/x-sage">
+P=plot(f(x),0,1)+plot(x,0,1,color='red')
+P.set_aspect_ratio(1)
+P.show()
+</script></div>
+
+<div class="sage"><script type="text/x-sage">
+P=plot(f(f(x)),0,1)+plot(x,0,1,color='red')
+P.set_aspect_ratio(1)
+P.show()
+</script></div>
+
+<div class="sage"><script type="text/x-sage">
+P=plot(f(f(f(x))),0,1)+plot(x,0,1,color='red')
+P.set_aspect_ratio(1)
+P.show()
+</script></div>
+
+<div class="sage"><script type="text/x-sage">
+plot(f(f(f(x))),0,1)+plot(x,0,1,color='red')
+</script></div>
+
+<div class="sage"><script type="text/x-sage">
+plot(f(f(f(f(x)))),0,1)+plot(x,0,1,color='red')
 </script></div>
 ]]></content>
   </entry>
